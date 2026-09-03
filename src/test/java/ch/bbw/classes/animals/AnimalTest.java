@@ -83,7 +83,7 @@ class AnimalTest implements WithAssertions {
 	List<SoundMaking> getMusicians() {
 		// TODO: Gibt eine Liste von Musikanten zurück, bsp: List.of(new Elephant(), new Elephant()).
 		//  Lasse danach den animalConcert()-Test erfolgreich laufen.
-		return List.of();
+		return List.of(new Dog(), new Dog(), new Bird(), new Fish(), new Dog());
 	}
 
 	@Test
