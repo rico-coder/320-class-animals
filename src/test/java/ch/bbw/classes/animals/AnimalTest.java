@@ -54,6 +54,11 @@ class AnimalTest implements WithAssertions {
 	@Test
 	void bird() {
 		// TODO: Schreibe einen Test analog des obigen fish()
+		var bird = new Bird();
+		assertThat(bird.canLayEggs()).isTrue();
+		assertThat(bird.canLiveInWater()).isFalse();
+		assertThat(bird.canLiveOnLand()).isTrue();
+		assertThat(bird.getNumberOfLegs()).isEqualTo(2);
 	}
 
 	/**
