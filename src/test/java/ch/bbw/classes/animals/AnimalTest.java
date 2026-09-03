@@ -23,6 +23,11 @@ class AnimalTest implements WithAssertions {
 	@Test
 	void dog() {
 		// TODO: Schreibe einen Test analog des obigen elephantSample()
+		var dog = new Dog();
+		assertThat(dog.getNumberOfLegs()).isEqualTo(4);
+		assertThat(dog.canLiveInWater()).isFalse();
+		assertThat(dog.canLiveOnLand()).isTrue();
+		assertThat(dog.canLayEggs()).isFalse();
 	}
 
 	/**
@@ -34,11 +39,11 @@ class AnimalTest implements WithAssertions {
 	@Test
 	void fish() {
 		// TODO: Entferne die Kommentare von diesem Test und lasse ihn erfolgreich laufen
-		//var fish = new Fish();
-		//assertThat(fish.getNumberOfLegs()).isEqualTo(0);
-		//assertThat(fish.canLiveInWater()).isTrue();
-		//assertThat(fish.canLiveOnLand()).isFalse();
-		//assertThat(fish.canLayEggs()).isTrue();
+		var fish = new Fish();
+		assertThat(fish.getNumberOfLegs()).isEqualTo(0);
+		assertThat(fish.canLiveInWater()).isTrue();
+		assertThat(fish.canLiveOnLand()).isFalse();
+		assertThat(fish.canLayEggs()).isTrue();
 	}
 
 	/**
@@ -58,10 +63,10 @@ class AnimalTest implements WithAssertions {
 	@Test
 	void labrador() {
 		// TODO: Entferne die Kommentare von diesem Test und lasse ihn erfolgreich laufen
-		//var labrador = new Labrador();
-		//assertThat(labrador instanceof Dog).isTrue();
-		//assertThat(labrador instanceof Animal).isTrue();
-		//assertThat(labrador instanceof Object).isTrue();
+		var labrador = new Labrador();
+		assertThat(labrador instanceof Dog).isTrue();
+		assertThat(labrador instanceof Animal).isTrue();
+		assertThat(labrador instanceof Object).isTrue();
 	}
 
 	/**
